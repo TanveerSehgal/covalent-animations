@@ -1,7 +1,23 @@
-<div>
-  <h1>Hello World!</h1>
-</div>
+<header>
+  <h1>Welcome to the World of Covalent Animations</h1>
 
-<button mat-raised-button [@tdRotate]="triggerState" (click)="triggerState = !triggerState" color="accent">
-  Rotate 180&deg;<mat-icon>mood</mat-icon>
-</button>
+  <button mat-raised-button (click)="resetAllAnimations()">Reset All</button>
+</header>
+
+<div class="animations">
+  <div class="animations__animation">
+    <h3>Default Rotate Animation</h3>
+
+    <button mat-raised-button [@tdRotate]="triggerState" (click)="triggerState = !triggerState">
+      Rotate 180&deg;<mat-icon>home</mat-icon>
+    </button>
+  </div>
+
+  <div class="animations__animation">
+    <h3>Configured Rotate Animation</h3>
+
+    <button mat-raised-button [@customRotate]="customTriggerState" (click)="customTriggerState = !customTriggerState">
+      Rotate 45&deg;<mat-icon>home</mat-icon>
+    </button>
+  </div>
+</div>

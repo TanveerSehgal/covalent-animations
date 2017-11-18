@@ -1,0 +1,19 @@
+header {
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.animations {
+    display: flex;
+    width: 100%;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.animations__animation {
+    flex: 1;
+    flex-basis: 33%;
+
+    text-align: center;
+}

@@ -26,3 +26,7 @@ header {
     background: red;
     border-radius: 50%;
 }
+
+.secrets {
+    margin: 10px auto 0;
+}

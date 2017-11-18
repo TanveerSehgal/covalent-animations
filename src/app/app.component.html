@@ -28,4 +28,14 @@
 
     <div class="ball" [@bounce]="bounceState"></div>
   </div>
+
+  <div class="animations__animation">
+    <h3>Collapse Animation</h3>
+
+    <button mat-raised-button (click)="collapseState = !collapseState">{{ collapseState ? 'Show' : 'Hide' }}</button>
+
+    <div class="secrets" [@collapse]="collapseState">
+      These are the secrets of animation....! Hide these secrets before some catches you looking at them!!
+    </div>
+  </div>
 </div>

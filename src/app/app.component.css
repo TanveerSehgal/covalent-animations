@@ -28,5 +28,16 @@ header {
 }
 
 .secrets {
-    margin: 10px auto 0;
+    margin: 20px auto 0;
+}
+
+.warning {
+    padding: 20px;
+    margin: 20px auto 0;
+
+    color: white;
+    text-transform: uppercase;
+
+    background: #ba7500;
+    border-radius: 5px;
 }

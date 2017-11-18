@@ -38,4 +38,12 @@
       These are the secrets of animation....! Hide these secrets before some catches you looking at them!!
     </div>
   </div>
+
+  <div class="animations__animation">
+    <h3>Flash Animation</h3>
+
+    <button mat-raised-button (click)="flashState = !flashState">Flash</button>
+
+    <div [@flash]="flashState" class="warning">Warning!</div>
+  </div>
 </div>

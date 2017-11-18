@@ -3,6 +3,7 @@ import {
   TdRotateAnimation,
   TdBounceAnimation,
   TdCollapseAnimation,
+  TdFlashAnimation,
 } from '@covalent/core';
 
 @Component({
@@ -13,7 +14,8 @@ import {
       TdRotateAnimation(),
       TdRotateAnimation({ anchor: 'customRotate', duration: 750, degrees: 45, ease: 'linear' }),
       TdBounceAnimation({ anchor: 'bounce', duration: 750 }),
-      TdCollapseAnimation({ anchor: 'collapse' })
+      TdCollapseAnimation({ anchor: 'collapse' }),
+      TdFlashAnimation({ anchor: 'flash' }),
   ],
 })
 export class AppComponent {
@@ -21,11 +23,13 @@ export class AppComponent {
   customTriggerState = false;
   bounceState = false;
   collapseState = true;
+  flashState = false;
 
   resetAllAnimations() {
     this.triggerState = false;
     this.customTriggerState = false;
     this.bounceState = false;
     this.collapseState = true;
+    this.flashState = false;
   }
 }

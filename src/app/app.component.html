@@ -46,4 +46,12 @@
 
     <div [@flash]="flashState" class="warning">Warning!</div>
   </div>
+
+  <div class="animations__animation">
+    <h3>Headshake Animation</h3>
+
+    <button mat-raised-button (click)="headshakeState = !headshakeState">Shake My Head</button>
+
+    <mat-icon [@shake]="headshakeState" class="head">mood</mat-icon>
+  </div>
 </div>

@@ -4,6 +4,7 @@ import {
   TdBounceAnimation,
   TdCollapseAnimation,
   TdFlashAnimation,
+  TdHeadshakeAnimation,
 } from '@covalent/core';
 
 @Component({
@@ -16,6 +17,7 @@ import {
       TdBounceAnimation({ anchor: 'bounce', duration: 750 }),
       TdCollapseAnimation({ anchor: 'collapse' }),
       TdFlashAnimation({ anchor: 'flash' }),
+      TdHeadshakeAnimation({ anchor: 'shake' }),
   ],
 })
 export class AppComponent {
@@ -24,6 +26,7 @@ export class AppComponent {
   bounceState = false;
   collapseState = true;
   flashState = false;
+  headshakeState = false;
 
   resetAllAnimations() {
     this.triggerState = false;
@@ -31,5 +34,6 @@ export class AppComponent {
     this.bounceState = false;
     this.collapseState = true;
     this.flashState = false;
+    this.headshakeState = false;
   }
 }

@@ -41,3 +41,10 @@ header {
     background: #ba7500;
     border-radius: 5px;
 }
+
+.head {
+    display: block;
+    margin: 20px auto 0;
+
+    font-size: 40px;
+}

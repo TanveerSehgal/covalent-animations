@@ -20,4 +20,12 @@
       Rotate 45&deg;<mat-icon>home</mat-icon>
     </button>
   </div>
+
+  <div class="animations__animation">
+    <h3>Bounce Animation</h3>
+
+    <button mat-raised-button (click)="bounceState = !bounceState">Bounce</button>
+
+    <div class="ball" [@bounce]="bounceState"></div>
+  </div>
 </div>

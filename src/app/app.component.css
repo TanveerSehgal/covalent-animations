@@ -17,3 +17,12 @@ header {
 
     text-align: center;
 }
+
+.ball {
+    width: 100px;
+    height: 100px;
+    margin: 30px auto 0;
+
+    background: red;
+    border-radius: 50%;
+}

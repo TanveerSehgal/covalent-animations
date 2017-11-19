@@ -68,4 +68,12 @@
 
     <button class="pulse-button" [@pulse]="pulseState" mat-raised-button (click)="pulseState = !pulseState">Pulse</button>
   </div>
+
+  <div class="animations__animation">
+    <h3>Fade Animation</h3>
+
+    <button mat-raised-button (click)="fadeState = !fadeState">Fade {{ fadeState ? 'Out' : 'In' }}</button>
+
+    <div [@fade]="fadeState" class="fade-div"></div>
+  </div>
 </div>

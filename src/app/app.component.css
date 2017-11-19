@@ -67,3 +67,11 @@ header {
     color: white;
     background: deepskyblue;
 }
+
+.fade-div {
+    width: 100px;
+    height: 50px;
+    margin: 20px auto 0;
+
+    background: green;
+}

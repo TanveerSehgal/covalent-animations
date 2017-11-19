@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import {
-  TdRotateAnimation,
-  TdBounceAnimation,
-  TdCollapseAnimation,
-  TdFlashAnimation,
-  TdHeadshakeAnimation,
+    TdRotateAnimation,
+    TdBounceAnimation,
+    TdCollapseAnimation,
+    TdFlashAnimation,
+    TdHeadshakeAnimation,
+    TdJelloAnimation,
 } from '@covalent/core';
 
 @Component({
@@ -18,22 +19,25 @@ import {
       TdCollapseAnimation({ anchor: 'collapse' }),
       TdFlashAnimation({ anchor: 'flash' }),
       TdHeadshakeAnimation({ anchor: 'shake' }),
+      TdJelloAnimation({ anchor: 'jello' }),
   ],
 })
 export class AppComponent {
-  triggerState = false;
-  customTriggerState = false;
-  bounceState = false;
-  collapseState = true;
-  flashState = false;
-  headshakeState = false;
+    triggerState = false;
+    customTriggerState = false;
+    bounceState = false;
+    collapseState = true;
+    flashState = false;
+    headshakeState = false;
+    jelloState = false;
 
-  resetAllAnimations() {
-    this.triggerState = false;
-    this.customTriggerState = false;
-    this.bounceState = false;
-    this.collapseState = true;
-    this.flashState = false;
-    this.headshakeState = false;
-  }
+    resetAllAnimations() {
+        this.triggerState = false;
+        this.customTriggerState = false;
+        this.bounceState = false;
+        this.collapseState = true;
+        this.flashState = false;
+        this.headshakeState = false;
+        this.jelloState = false;
+    }
 }

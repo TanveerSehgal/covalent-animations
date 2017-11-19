@@ -54,4 +54,12 @@
 
     <mat-icon [@shake]="headshakeState" class="head">mood</mat-icon>
   </div>
+
+  <div class="animations__animation">
+    <h3>Jello Animation</h3>
+
+    <button mat-raised-button (click)="jelloState = !jelloState">Click to Jello</button>
+
+    <div [@jello]="jelloState" class="jello">I'm Jelly <mat-icon>mood</mat-icon></div>
+  </div>
 </div>

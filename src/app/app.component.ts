@@ -6,6 +6,7 @@ import {
     TdFlashAnimation,
     TdHeadshakeAnimation,
     TdJelloAnimation,
+    TdPulseAnimation,
 } from '@covalent/core';
 
 @Component({
@@ -20,6 +21,7 @@ import {
       TdFlashAnimation({ anchor: 'flash' }),
       TdHeadshakeAnimation({ anchor: 'shake' }),
       TdJelloAnimation({ anchor: 'jello' }),
+      TdPulseAnimation({ anchor: 'pulse' }),
   ],
 })
 export class AppComponent {
@@ -30,6 +32,7 @@ export class AppComponent {
     flashState = false;
     headshakeState = false;
     jelloState = false;
+    pulseState = false;
 
     resetAllAnimations() {
         this.triggerState = false;
@@ -39,5 +42,6 @@ export class AppComponent {
         this.flashState = false;
         this.headshakeState = false;
         this.jelloState = false;
+        this.pulseState = false;
     }
 }

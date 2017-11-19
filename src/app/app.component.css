@@ -62,3 +62,8 @@ header {
 
     background: rgba(255, 11, 36, 0.4);
 }
+
+.pulse-button {
+    color: white;
+    background: deepskyblue;
+}

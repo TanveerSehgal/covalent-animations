@@ -62,4 +62,10 @@
 
     <div [@jello]="jelloState" class="jello">I'm Jelly <mat-icon>mood</mat-icon></div>
   </div>
+
+  <div class="animations__animation">
+    <h3>Pulse Animation</h3>
+
+    <button class="pulse-button" [@pulse]="pulseState" mat-raised-button (click)="pulseState = !pulseState">Pulse</button>
+  </div>
 </div>
